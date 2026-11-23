@@ -1,0 +1,269 @@
+<div class="background">
+    <div class="donate"><a href="https://gofund.me/996dab80" target="_blank" rel="noopener">DONATE</a></div>
+
+    <div *ngIf="!service.cell" class="grid-container center">
+        <span class="grid-item">
+            <video width="100%" onloadstart="this.volume=0.1" height="auto" autoplay controls muted>
+                <source src="/assets/videos/All_FDA_Testimonies_02.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <p class="center">September 20, 1991 - Fda Psychopharmacologic Drugs Advisory Hearing, Psychopharmacologic
+                Drugs Advisory
+                Committee, Conference Rooms D/E, Parklawn Building, Rockville Maryland</p>
+        </span>
+        <div class="lexapro-statistics">
+            <span>Lexapro and Escitalopram FDA FAERs Adverse Drug Event Reports by Reaction</span>
+            <div *ngFor="let searchterm of service.searchTerms">{{searchterm}}: {{service.stats.get(searchterm)}}</div>
+        </div>
+    </div>
+
+    <div *ngIf="service.cell" class="center">
+        <video class="center" width="100%" height="auto" autoplay controls muted>
+            <source src="/assets/videos/TuckerMoneymaker_1991.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+        <img class="center" src="/assets/images/blood_on_your_hands.jpg" />
+    </div>
+
+    <p><a href="http://www.antidepressantstatistics.com">Thousands of people every year are harmed every year by SSRI
+            antidepressants</a> that cause both homicide and suicide at all ages. Many patients treated with these
+        substances
+        are convicted of crimes caused by the medication. Although Involuntary Intoxication laws exist in most states to
+        prevent patients from being incarcerated as the result of doctors prescriptions this defense is often overruled,
+        suppressed and ignored by the courts. Currently multiple patients who were treated with SSRI antidepressants and
+        other
+        psycho-active medications without being warned about violence as a side effect, are <a
+            routerLink="/other-patients">serving prison time including life
+            sentences for trusting their doctor.</a> This information is deliberately withheld from patients when they
+        are
+        started on the medication because fully informed patients refuse to take the medication.</p>
+
+    <p> Benjamin Bathen was wrongfully convicted of three counts of <a
+            href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=422">PC 422
+            criminal threats</a> in California in June of 2018 and sentenced to two years in the California state
+        Pennitentiary. He served 10.5 months and completed both his sentence and his Parole with no disciplinary
+        violations.</p>
+
+    <p>Although a <a routerLink="/dna_evidence">DNA analysis</a> concluded that the
+        incidents were caused by the medication, and 47 of the criminal prosecutors at the San Diego District Attorney's
+        office voted him <a routerLink="/web-poll"> NOT GUILTY in an online web poll </a>the courts have upheld
+        his conviction and denied any form of
+        relief by denying an evidentiary hearing. Both Cheri Brianne Somerville and James Joel Madero the trial
+        attorney's that prosecuted Mr. Bathen and
+        had him sentenced to prison responded "No" the the question "was Ben Bathen guilty of three counts of PC 422
+        criminal threats."</p>
+
+    <p><span class="bold">This conviction is false.</span> <a class="bold" routerLink="/dna_evidence"> DNA
+            evidence </a>proves the verbal statements captured on the confidential voicemail
+        of
+        his therapist were
+        caused by the SSRI antidepressant
+        Ecitalopram. Ironically it's the same therapist who spent four years convincing Mr. Bathen to take
+        antidepressant
+        medication who then filed criminal charges against him from <a routerLink="/immediate">2600
+            miles away</a> for displaying the serious side
+        effects
+        of antidepressant medication</p>
+
+    <p> This reaction occurred eight years after the last therapy session due to the fact that once a patient has taken
+        the
+        medication and
+        transitioned off of it, they can never take that
+        medication again. This is referred to as the "kindling effect". Each successive cycle of the medication
+        dramatically increases the
+        severity
+        of the side effects. The specific advice that Dr. Carolyn Francis Jacobs gave her patient was, "Ok, you will
+        have to take this medication on and off for the remainder of your life to manage the symptoms of depression!"
+        The most severe adverse drug events
+        occur the second or the third time that the medication is reintroduced.
+
+        The other major factor that exponentially increases the likelyhood of an adverse drug event is
+        taking the generic form of the medication. Eventually the adverse drug events kill the patient not the doctor
+        located <a routerLink="/immediate">2600
+            miles away.</a> Although these medications were never tested for longer than six weeks, and were not
+        intended for long term use, many doctors
+        continue to prescribe them for years at a time without monitoring their patients as required by the FDA
+        guidelines.
+    </p>
+
+    <p>Some of the side effects of SSRI antidepressants are Homicide, Homicidal ideation, Homicidal Threats,
+        Innapropriate Sexual Behavior and rage episodes. Mr. Bathen experienced Akathisia, Taridive Dyskenisia, and
+        Serotonin Toxicity both before and after calling the emergency number.</p>
+
+    <p>Should Anesthesiologists be allowed to file criminal charges against their patients for falling asleep during a
+        complicated medical procedure? Should dentists be allowed to incarcerate their patients for using floride based
+        toothpaste and remembering to floss? What exactly is a <a routerLink="/frim">FRIM</a>?  These and other questions are brought up by the people vs. Bathen and related case Bathen vs. Allison  San Diego County Superior Court Case No. Scs 294342 Related Court Of Appeal No. D074538</p>
+
+    <p>Patients are not warned about these side effects when they are told to take the medication. Instead they are told
+        that the medication is very safe, that adverse reactions are extremely rare and that a chemical imbalance is
+        what is
+        causing their depression. All of these statements are false.</p>
+
+    <p>No warning is issued to patients about the potential for violence as a side effect. Both terms "Akathisia" and
+        "Tardive Dyskenisia" have been excluded from the medication guide provided to patients. It is impossible for a
+        patient to
+        recognize the side effects of the medication in themself before an adverse drug
+        event occurs. This is due to the fact that the side effects are a sign of neurotoxicity or brain damage. People
+        with brain damage do not diagnose themselves with brain damage since doing so would require the use of a fully
+        functional brain. Going to work for the California Attorney General's office does not require the use of a fully
+        functional brain.</p>
+
+    <div *ngIf="!service.cell" class="grid-container">
+        <a href="https://www.madinamerica.com/wp-content/uploads/2010/04/Yassa.pdf">
+            <img class="grid-item" src="/assets/images/yassa_92_percent_td.jpg" tooltip="Functional impairment in
+        medical and psychosocial dimensions
+        Acta Psychiatr Scand 1989.80:64-67
+        
+        R. Yassa
+        Department of Psychiatry McGill University,
+        Montreal, and Psychiatrist, Douglas Hospital,
+        Verdun, Quebec. Canada" />
+        </a>
+
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5771055/">
+            <img class="grid-item" src="/assets/images/Akathisia_Diagnosis.png" tooltip="Revisiting Antipsychotic-induced Akathisia: Current Issues and Prospective Challenges
+            Haitham Salem,a,b Caesa Nagpal,b Teresa Pigott,b and Antonio Lucio Teixeiraa" />
+        </a>
+    </div>
+    <div *ngIf="service.cell" class="center">
+        <a href="https://www.madinamerica.com/wp-content/uploads/2010/04/Yassa.pdf">
+            <img class="center detailedReport" src="/assets/images/yassa_92_percent_td.jpg" tooltip="Functional impairment in
+        medical and psychosocial dimensions
+        Acta Psychiatr Scand 1989.80:64-67
+        
+        R. Yassa
+        Department of Psychiatry McGill University,
+        Montreal, and Psychiatrist, Douglas Hospital,
+        Verdun, Quebec. Canada" />
+        </a>
+
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5771055/">
+            <img class="center detailedReport" src="/assets/images/Akathisia_Diagnosis.png" tooltip="Revisiting Antipsychotic-induced Akathisia: Current Issues and Prospective Challenges
+            Haitham Salem,a,b Caesa Nagpal,b Teresa Pigott,b and Antonio Lucio Teixeiraa" />
+        </a>
+    </div>
+
+    <p class="center"
+        tooltip="If you are having a medically induced psychotic episode call the CONFIDENTIAL voicemail box of the doctor who said 'It's my moral and ethical obligation to make sure you are taking this medication'.  Do not call the guy who checks your blood pressure.">
+        <audio class="center" controls muted>
+            <source src="/assets/audio/JacobsAnsweringMachine.mp3" type="audio/mp3">
+        </audio>
+    </p>
+
+    <p>When Dr. Carolyn Francis Jacobs started Mr. Bathen on Prozac in 2004 she also provided a confidential emergency
+        phone number to call "anytime day or night",
+        she was very specific and repeated multiple times that this was the phone number to call. She did not disclose
+        that the medication causes patients to murder their own family members.
+        Dr. Jacobs impeached herself under oath at the trial claiming that a formal termination of therapy took place.
+        It did not. Therapy was never formally terminated but came to an abrupt
+        stop when Dr. Jacobs had a prozac fueled rage episode in September of 2008, began screaming at the top of her
+        lungs in the middle of the last therapy session and abruptly hung up the phone after saying "It's fine if you
+        call me back."
+    </p>
+
+    <p>A systematic review of 70 double blind placebo controlled trials internationally, shows that some of the most
+        common life threatening adverse reactions to SSRI
+        antidepressants are, homicidal threats, verbally abusive and aggressive threats, increased hostility,
+        aggressiveness, rage, or anger along with sexual molestation and uncontrollable rage episodes.</p>
+
+    <a href="https://www.bmj.com/content/352/bmj.i65.full.pdf+html">
+        <p>"Only patient narratives were available for serious events and they included homicidal threat, homicidal
+            ideation, assault, sexual molestation, and a threat to take a gun to school (all five participants receiving
+            sertraline), damage to property, punching household items, aggressive assault, verbally abusive and
+            aggressive threats (all five participants receiving paroxetine), and belligerence (fluoxetine). Details were
+            unavailable for non-serious events, as they were either listed in adverse events tables or given in the
+            appendix of individual patient listings without any narratives. These events were increased hostility,
+            aggressiveness, rage, or anger."</p>
+    </a>
+
+    <p>The 2017 FDA approved medication guide for Lexapro(Escitalopram) excludes any reference to Akathisia, Tardive
+        Dyskenisia, or Homicidal ideation, due to heavy
+        pharmaceutical lobbying and funding, despite the fact that {{service.stats.get('Akathisia')}} reports have been
+        received for Akathisia, {{service.stats.get('Tardive Dyskenisia')}} reports have been received for Tardive
+        Dyskenisia, and {{service.stats.get('Homicidal Ideation')}} adverse drug event reports have been recieved
+        attributing 'Homicidal Ideation' to Lexapro and Escitalopram.
+
+    <p>There is no reasonable way that a patient who is
+        told the only side effects are
+        insomnia, weight gain would know this information.</p>
+
+    <p>Once a patient starts on the medication, they are no longer
+        able to monitor their own behavior. SSRI medication reduces brain activity in the frontal lobe and central brain
+        resulting in a partial chemical lobotomy.</p>
+
+    <div class="grid-container center">
+        <img class="grid-item" src="/assets/images/CallYourHealthcarePractitionerRightAway_small.jpg"
+            tooltip="The FDA approved medication guide specifically instructs patients to call their healthcare practitioner right away, that means the healthcare practitioner who told you to take the antidepressant, not the guy who squeezes your nuts on an annual basis" />
+        <object data="/assets/pdf/Lexapro_Medication_Guide.pdf" type="application/pdf" class="grid-item pdf" style="width:100%; height:100%"></object>
+    </div>
+
+    <p>By repeatedly suppressing <a class="bold" routerLink="/dna_evidence"> DNA evidence </a> and denying a
+        hearing at both the state and federal level, the judges
+        in
+        these cases
+        continue to
+        enable pharmaceutical companies and the FDA to continue to allow incidents like the one in the FDA
+        detailed
+        report below, in which an adult male kills all of his children and then commits suicide by firearm, to
+        occur on a
+        national and global scale. Why?? They want their judgements to be final, and they will be for patients who
+        continue to take SSRI antidepressants with no warning.</p>
+
+    <div class="grid-container">
+        <img class="detailedReport grid-item" src="/assets/images/FDA_detailed_reports/Lexapro/6150282_page_01.png" />
+        <img class="detailedReport grid-item" src="/assets/images/FDA_detailed_reports/Lexapro/6150282_page_02.png" />
+    </div>
+
+    <p>One year, three months and nine days after Judge Michael M. Anello a Federal judge with all the power of the
+        Federal Government of the United States denied both the Habeas Petition and the Certificate of Apealability in
+        Mr. Bathen's case even after viewing the FDA statistics and screenshots of the FDA's FAERs dashboard showing
+        both suicides and homicides occuring as a result of prescriptions for SSRI antidepressants, the woman in the
+        picture below, Lindsay Clancy was prescribed Prozac and strangled all three children in the picture. All of the
+        children are dead, Lindsay is paralyzed from the waist down and on trial from her hospital bed for murder.
+        Clearly these incidents could have been prevented if anybody anywhere could convince the judiciary to stop
+        ignoring DNA evidence and the law and hold the pharmaceutical companies that are knowingly distributing an
+        amphetamine like stimulant with a side effect of murder to the public with no warning. Lindsay Clancy is not
+        guilty and will live the rest of her life paralyzed knowing that she murdered her own kids. Neither the state or
+        Federal court system has taken any action to prevent further incidents and continue to attempt to conceal any
+        form of truth, evidence reason or the law. This is only one example of many <a
+            href="http://antidepressantstatistics.com">thousands of incidents occurring </a> all over the country as a
+        result of prescriptions for these drugs. The FDA estimates that only one to ten percent of the actual incidents
+        that occur are reported via the Medwatch/Federal adverse event reporting system. Patrick Clancy, words cannot
+        express how sorry we are for your loss. Elli Lilly can and should be held accountable for stealing the lives of
+        these children and many thousands of others.</p>
+
+    <img class="center" src="/assets/images/Other_Patients/Lindsay_Clancy.jpg" />
+
+    <p>This incident is a mirror of when Andrea Yates drowned all five of her children after
+        being prescribed over the maximum dose of Effexor, an SSRI antidepressant. The courts ignore the fact that the
+        medical community has been aware of that these incidents would occur since the late eighties and continued to
+        prescribe these dangerous drugs under false pretenses anyway. While the courts, defense attorney's and
+        prosecutors blame adverse drug events on anything other than the drugs mental health care markets as a cure, it
+        is clear that psychiatric drugs are not the solution to the problem, they are the problem.</p>
+
+    <img class="center" src="/assets/images/Other_Patients/AndreaYates-Collage.jpg" />
+
+    <p>Hunting down the patients who through no fault of their own followed their doctors drug recommendation, locking
+        them in a cage, having them
+        watch
+        episodes of insane violence in prison including, stabbings, beatings, and threats of sexual violence, telling
+        them to take another prescription for Prozac(fluoxetine), and having prison guards and race based gang members
+        scream racial slurs at them, will not decrease the likelihood that the patients will eventually
+        commit an act of violence.</p>
+
+    <p>For every one dollar that activists, research scientists, surviving family members and patients can contribute to
+        raise awareness, or advocate for removing these drugs from the market, the pharmaceutical industry can run a
+        multi million dollar advertising campaign and not miss it. Daily sales of prozac alone currently exceed eight
+        million dollars a day. Up to 65% of the U.S. Food and Drug Administrations current funding comes in the form of
+        user fees, directly from the pharmaceutical corporations who manufacture these drugs. Allowing the companies who
+        manufacture drugs to fund the drug regulatory agency that oversees their products is a clear and dangerous
+        conflict of interest. If you would like to prevent violent crime, reduce the homicide rate, reduce the suicide
+        rate, reduce the number of sex offenses and protect the public please make a small contribution to remove these
+        drugs from the market today.</p>
+
+    <div class="donate"><a href="https://gofund.me/996dab80" target="_blank" rel="noopener">DONATE</a></div>
+
+
+</div>
+
+<app-contact></app-contact>

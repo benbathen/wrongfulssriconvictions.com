@@ -1,0 +1,129 @@
+// Comments form styles
+
+$primary-color: #007CBA
+$primary-dark: #005f7a
+$card-bg: #0b4f66
+$muted: #f2f2f2
+
+.topForm
+    max-width: 920px
+    margin: 24px auto
+    padding: 20px
+    background: rgba($primary-color, 0.12)
+    border-radius: 6px
+    border: 1px solid rgba($primary-dark, 0.12)
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08)
+    color: #032B3A
+    display: block
+
+    // Labels and form elements
+    label
+        display: block
+        font-weight: 600
+        margin-bottom: 6px
+        color: $primary-dark
+
+    .form-group
+        display: block
+        margin-bottom: 18px
+
+        // Two-column grid for first/last name on wide screens
+        &.name-row
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 12px
+            > div
+                &:first-child
+                    // add slight right padding for separation
+                    padding-right: 6px
+                &:last-child
+                    padding-left: 6px
+
+    input[type="text"], input[type="email"], textarea
+        display: block
+        width: 100%
+        padding: 10px 12px
+        border: 1px solid rgba(0,0,0,0.15)
+        border-radius: 4px
+        background: #fff
+        font-size: 14px
+        color: #122
+        box-sizing: border-box
+        transition: border-color .18s ease, box-shadow .18s ease
+
+        &:focus
+            outline: none
+            border-color: $primary-color
+            box-shadow: 0 0 0 3px rgba($primary-color, 0.12)
+
+    textarea
+        min-height: 120px
+        resize: vertical
+
+    .error-message
+        margin-top: 6px
+        color: #c92a2a
+        font-size: 12px
+
+    button[type="submit"]
+        background: $primary-color
+        color: #fff
+        border: none
+        padding: 10px 20px
+        border-radius: 4px
+        cursor: pointer
+        font-weight: 600
+        box-shadow: 0 2px 0 rgba(0,0,0,0.06)
+
+        &:hover
+            background: $primary-dark
+
+        &:disabled
+            opacity: 0.6
+            cursor: not-allowed
+
+// Responsive behavior: collapse two-column layout on smaller screens
+@media (max-width: 720px)
+    .topForm
+        padding: 12px
+        margin: 12px
+
+        .form-group.name-row
+            grid-template-columns: 1fr
+
+// Comments list styling
+.comments-list
+    max-width: 920px
+    margin: 18px auto
+    padding: 12px
+    border-radius: 6px
+    background: rgba(3, 57, 78, 0.04)
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04)
+
+.comment-card
+    border-left: 4px solid $primary-color
+    padding: 12px
+    margin: 8px 0
+    background: #ffffff
+    border-radius: 4px
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03)
+
+.comment-meta
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 8px
+    color: #11323b
+    font-size: 13px
+    .comment-author
+        font-weight: 600
+    .comment-date
+        color: #567
+
+.comment-body
+    font-size: 14px
+    color: #0f2b31
+    white-space: pre-wrap
+    line-height: 1.55
+
+

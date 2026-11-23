@@ -1,0 +1,51 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="topForm">
+  <!-- Name Row: First and Last Name side-by-side on wide screens -->
+  <div class="form-group name-row">
+    <div>
+      <label for="firstName">First Name</label>
+      <input id="firstName" type="text" formControlName="firstName" />
+      <div class="error-message" *ngIf="formGroup.get('firstName')?.hasError('required') && formGroup.get('firstName')?.touched">
+        First name is required.
+      </div>
+    </div>
+    <div>
+      <label for="lastName">Last Name</label>
+      <input id="lastName" type="text" formControlName="lastName" />
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" type="email" formControlName="email" />
+    <div class="error-message" *ngIf="formGroup.get('email')?.hasError('required') && formGroup.get('email')?.touched">
+      Email is required.
+    </div>
+    <div class="error-message" *ngIf="formGroup.get('email')?.hasError('email') && formGroup.get('email')?.touched">
+      Please enter a valid email.
+    </div>
+  </div>
+
+  <!-- Address group -->
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea id="comment-input" rows="5" cols="50" placeholder="Enter your comments here..." formControlName="comment"></textarea>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" [disabled]="formGroup.invalid">Submit</button>
+</form>
+
+  <div class="comments-list" *ngIf="comments">
+    <h3>User Comments</h3>
+    <div *ngIf="comments.length === 0">No comments yet. Be the first to submit one!</div>
+    <div *ngFor="let c of comments" class="comment-card">
+      <div class="comment-meta">
+        <span class="comment-author">{{ c.firstName }} {{ c.lastName }}</span>
+        <span class="comment-date">{{ c.createdAt | date: 'medium' }}</span>
+      </div>
+      <div class="comment-body">{{ c.comment }}</div>
+    </div>
+  </div>
+
+

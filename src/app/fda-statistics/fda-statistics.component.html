@@ -1,0 +1,44 @@
+<div class="background">
+    <div class="gfm-embed" data-url="https://www.gofundme.com/f/ytgpe-ben-bathen-legal-defense-fund/widget/medium/"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+    <div class="faers-content">
+        <div class="faers-main">
+            <div class="faers-description">
+                <img src="/assets/images/FDA_FAERs.png" class="fda-icon" />
+                <p>The U.S. Food and Drug Administration manages a database called FAERs. This stands for the Federal
+                    Adverse Event Reporting System. In the event that a patient has a severe adverse reaction to a medication
+                    Doctors, lawyers and even some of the prosecutors file a report which is maintained in the database. The FDA
+                    makes this data available using the openFDA API. The following are the most current violence statistics for
+                    Lexapro and Escitalopram.
+                    <a href="http://www.antidepressantstatistics.com">ANTIDEPRESSANT STATISTICS</a>
+                </p>
+            </div>
+
+            <p class="text">Although the U.S. Food and Drug Administration has received thousands of reports that include search terms for
+        violence such as <span class="bold">"Homicide"</span> and <span class="bold">"Intentional Self-Injury"</span>
+        their current regulatory warning does not notify
+        patients that this is a potential outcome of treatment with these substances. Instead patients are told that the
+        side effects include "weight gain", "insomnia" and a low risk of sexual side effects. There is no reasonable way
+        that a patient with a doctor telling them to take this medication could be aware of the dangerous, violent, and
+        life damaging or ending side effects of SSRI antidepressants. Nevertheless the courts, and the legal system
+        consistently blame patients who are treated with these substances for taking the medication their doctors
+        prescribe and convict and incarcerate them for the violent side effects the medications cause. <a
+            href="https://oag.ca.gov/about">Rob Bonta</a>, why not prosecute the pharmaceutical companies that knowingly
+        manufacture and distribute these substances, or the doctors who knowingly mislead their patients into thinking
+        these drugs are safe instead of incarcerating people who have already been seriously harmed by this type of
+        medical treatment?</p>
+    <p class="text">Kristen Kinnaird Chenelia, taking SSRI antidepressants off the market would result in a lower homicide rate,
+        lower suicide rate, lower crime and violent crime rate overall, why focus on prosecuting a patient outside of
+        California that has already received some light brain damage for listening to his doctor instead of protecting
+        the residents of the state of California from these dangerous narcotic like substances? Is the goal of the
+        Attorney Generals office to ensure the distribution of narcotic like stimulants by doctors and
+        therapists with inadequate medical credentials? Is the Attorney Generals office in the habit of
+        knowingly acting on behalf of californian's who break the law?</p>
+            <img class="faers-cta" src="/assets/images/CallYourHealthcarePractitionerRightAway_small.jpg" />
+        </div>
+
+        <aside class="lexapro-statistics">
+            <span>Lexapro and Escitalopram Adverse Drug Event Reports by Reaction</span>
+            <div *ngFor="let searchterm of service.searchTerms">{{searchterm}}: {{service.stats.get(searchterm)}}</div>
+        </aside>
+    </div>
+</div>

@@ -4,7 +4,28 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Before running the dev server: this project was built with Angular 12 and is tested on Node 16 or 18. If you use Node 17/22, you may see an OpenSSL error (digital envelope routines::unsupported).
+
+Run the dev script using the included npm scripts (recommended):
+
+```powershell
+npm install
+npm run start
+```
+
+If your local Node version is >18 and you prefer to keep it, use the legacy OpenSSL provider while you run the dev server:
+
+```powershell
+npm run start:legacy
+```
+
+If port 4200 is busy, start the dev server on a different port (e.g., 4301):
+
+```powershell
+npm run start:port
+```
+
+Note: If you run `ng serve` directly (without npm scripts), the `NODE_OPTIONS` environment variable may not be set; we recommend using the provided npm scripts so the correct Node flags are applied.
 
 ## Code scaffolding
 

@@ -1,0 +1,60 @@
+
+
+<div class="background">
+    <p class="title">"By 10:50 my husband called me screaming that ███████████ had shot himself in the head.  We firmly belief the escitalopram affected his brain so severely and quickly
+        that he went totally out of his right mind. He was dead when he arrived at the hospital." -FAERS ADE CASEID:
+        8500148</p>
+    <img class="gunshot" src="/assets/images/FDA_detailed_reports/Lexapro/8500148_page_02.png" />
+    <p>Andrew Thibault filed a pro se Freedom of Information Act Request lawsuit when the U.S. Food and Drug
+        Administration
+        either refused to release or else released in full redacted form the Detailed Adverse Drug Event Reports of
+        adverse
+        reactions including the term homicide. The lawsuit took three years to complete forcing the release of the
+        detailed
+        narrative reports shortly after the last incident Mr. Bathen was incarcerated for. With no warning in the
+        medication
+        guide including the terms
+        Homicide, Akathisia, Tardive Dyskenisia or Acute Psychosis there is no way for any patient to know the full
+        extent
+        of the dangerous side effects of SSRI antidepressants when they are recommended by therapists, many of whom do
+        not
+        have adequate medical training to discuss medication with a patient and do not perform the required monitoring.
+    </p>
+
+    <div class="grid-container" *ngFor="let image of imageArray; index as i">
+        <img class="grid-item" src='/assets/images/FDA_detailed_reports/Lexapro/{{image}}'
+            (click)="displayRecord($event)" />
+    </div>
+
+    <div class="shadow">
+        <div id="detailSource" *ngIf="showDetail">
+            <img class="detailImage" src="{{detailSource}}" (click)="displayRecord($event)" />
+        </div>
+    </div>
+
+    <pdf-viewer class='pdf'  src="/assets/pdf/Andrew_Thibault_searchable.pdf"
+        style="height: 900px" width="80%">
+    </pdf-viewer>
+
+        <div>
+            <p>The FDA does not perform any review of adverse drug event reports for Adults, however they did publish a
+                review of adverse drug event reports for pediatric use of ████████. The report contains multiple
+                accounts of
+                children showing signs of hostility, aggression, and violent behavior after being treated with ████████
+            </p>
+            <pdf-viewer class='pdf'  src="/assets/pdf/Lexapro_Pediatric_Safety_Review.pdf" style="height: 900px" width="80%"></pdf-viewer>
+        </div>
+
+        <div>
+            <p>Initially the FDA did not respond to Freedom of Information at requests for detailed narrative adverse
+                drug
+                event reports for reactions of Homicide, Suicide, and other acts of violence where the patient was
+                prescribed Lexapro, or Escitalopram. After about six months they agreed to send 10 reports at a time.
+                The
+                second response included FAERs Case ID: 8500148 The patients was issued generic escitalopram, the same
+                medication as Benjamin Bathen and Elias Joubran.</p>
+            <pdf-viewer class='pdf'  src="/assets/pdf/fda_foia_response/20001205_enc_400.pdf" style="height: 900px" width="80%">
+
+</pdf-viewer>
+        </div>
+</div>

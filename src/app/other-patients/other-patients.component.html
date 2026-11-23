@@ -1,0 +1,442 @@
+<div class="patientNav">
+    <div (click)="displayVictim('joubran')">Joubran</div>
+    <div (click)="displayVictim('clancy')"> Clancy</div>
+    <div (click)="displayVictim('wenke')">Wenke</div>
+    <div (click)="displayVictim('carmichael')">Carmichael</div>
+    <div (click)="displayVictim('pittman')">Pittman</div>
+    <div (click)="displayVictim('danysh')">Danysh</div>
+    <div (click)="displayVictim('demeniuk')">Demeniuk</div>
+    <div (click)="displayVictim('richardson')">Richardson</div>
+    <div (click)="displayVictim('ramos')">Ramos</div>
+    <div (click)="displayVictim('crespi')">Crespi</div>
+    <div (click)="displayVictim('lanza')">Lanza</div>
+    <div (click)="displayVictim('lindsay')">Lindsay</div>
+    <div (click)="displayVictim('yates')">Yates</div>
+    <div (click)="displayVictim('jacobs')">Jacobs</div>
+</div>
+
+
+<div class="background">
+    <p>Each of these patients was issued a prescription for an SSRI antidepressant. None of them were warned that
+        Homicide
+        is a known reported reaction to the medication that was supposed to help them feel positive and optimistic. It
+        would
+        have been impossible for them to know that a legal substance that their doctor recommended would cause serious
+        harm
+        to them and their loved ones. The court system views them as monsters, and continues to ignore science, logic
+        and
+        the law while blaming it on the patients and allowing Pharmaceutical companies to distribute substances that are
+        even
+        more likely to cause violence than illegal narcotics with impunity.</p>
+
+    <div class="victim" *ngIf="patient ==='joubran'" id="joubran">
+        <h1>Elias Joubran</h1>
+        <div class="images">
+            <img src="/assets/images/Other_Patients/Elias_Joubran_001.jpg" />
+            <img src="/assets/images/Other_Patients/Elias_Joubran_002.jpg" />
+            <img src="/assets/images/Other_Patients/Sheila_Joubran_001.jpg" />
+        </div>
+        <p>On December 29, 2015, Elias Joubran's physician
+            prescribed Lexapro for Elias's depression. Elias's
+            prescription was filled with generic escitalopram that was
+            manufactured and sold by a company other than Forest. On
+            December 30, 2015, Elias entered the house belonging to him
+            and his wife, Sheila Clay Joubran; he shot and killed Sheila
+            and then shot and killed himself. <span class="bold">Elias Joubran and Benjamin Bathen were issued the same
+                exact medication.</span>
+        </p>
+        <p>From the ensuing lawsuit which is still in progress:</p>
+        <p>On information and belief, Plaintiff avers
+            that neither Elias Joubran, nor his prescribing
+            physician were aware of the extent and true nature
+            of the facts which were misrepresented and or
+            suppressed by Defendants and neither discovered the
+            true facts at any time before the prescription and
+            the acts described elsewhere in this Complaint, all
+            with the proximate result and consequence that the
+            killing of [Sheila Joubran] and the suicide of Elias
+            Joubran took place as elsewhere described herein."
+            The complaint alleged that <span class="bold">Forest
+                "was aware that when new doses are given or
+                increased, there is an enhanced risk period for
+                suicide or violence, but failed to warn adequately
+                of this risk, and actively suppressed, concealed and
+                misrepresented the extent of this enhanced danger."</span></p>
+
+        <pdf-viewer class='pdf'  src="/assets/pdf/Feheley_V_Forrest_Laboratories.pdf"
+            class='pdf'></pdf-viewer>
+
+    </div>
+
+    <div class="victim" *ngIf="patient === 'wenke'" id="wenke">
+        <h1>Laura Wenke</h1>
+        <div class="images">
+            <img src="/assets/images/Other_Patients/Laura_Wenke_001.jpg" />
+        </div>
+        <p> After being issued a prescription for Lexapro and Xanax, Laura Wenke experienced "gaps in time" which were
+            later
+            classified as dissociative episodes in the court system. She stopped taking the medication because she
+            thought
+            it
+            wasn't helpful, but was convinced by her therapist to go back on Lexapro. She later experienced paranoia,
+            delusions,
+            hostility, and aggression and constructed a suit out of bubble wrap before sneaking up on her husband,
+            shooting
+            him
+            with a taser and stabbing him in the neck. Thankfully he survived the medication induced attack. From prison
+            she
+            accepts that she owes the state of California 10 years of her life. this incident was clearly caused by the
+            medication she was issued. Regardless of this fact, the court system continues to blame it on the patient,
+            and
+            allow
+            the Pharmaceutical companies to continue knowingly manufacturing and distributing these dangerous homicide
+            inducing
+            substances.</p>
+    </div>
+
+    <div class="victim" *ngIf="patient === 'clancy'" id="clancy">
+        <h1>Shane Clancy</h1>
+        <div class="images">
+            <img src="/assets/images/Other_Patients/Shane_Clancy_001.jpg" />
+            <img src="/assets/images/Other_Patients/Shane_Clancy_002.jpg" />
+            <img src="/assets/images/Other_Patients/Leonie_Fennell_001.jfif" />
+        </div>
+        <p> After being prescribed Celexa, the sister drug of Lexapro which contains the same stereoisomer and is
+            manufactured by the same company, Shane Clancy became aggessive, disoriented and stabbed three people
+            successfully killing one of them. He then stabbed himself through the chest and abdomen in excess of 19
+            times.
+            He punctured
+            his own heart and bled to death. An inquest into the incidents was held in Ireland and found that his death
+            was
+            not a
+            suicide. His mother <a href="https://about.me/leonie.fennell">Leonie Fennell</a> runs an antidepressant
+            awareness campaign in ireland.</p>
+        <iframe class="center" width="service.width" height="service.height"
+            src="https://www.youtube.com/embed/OxiZA_FgS-0" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="victim" *ngIf="patient === 'crespi'" id="crespi">
+        <h1>David Crespi</h1>
+        <div class="images">
+            <img tooltip="David Crespi killed both of his twin daughters in a psychotic episode caused by Prozac.  Elli Lilly knew this would happen and sold the drug anyway."
+                src="/assets/images/Other_Patients/David_Crespi_001.jpg">
+            <img tooltip="David Crespi killed both of his twin daughters in a psychotic episode caused by Prozac. Elli Lilly knew this would happen and sold the drug anyway."
+                src="/assets/images/Other_Patients/David_Crespi_002.jfif">
+        </div>
+        <p>In another tradgedy caused by an SSRI antidepressant, <a
+                href="http://www.crespifamilyhope.org/about-us/">David
+                Crespi</a> had a psychotic reaction to a combination of
+            prescription drugs including Prozac. He stabbed both of his own twin daughters, Samantha and Tessara to
+            death
+            because he believed the lawn sprinklers in the back yard were telling him to murder his children. These
+            tragic
+            incidents were not his fault. There is no way for patients to know that homicide is a side effect of the
+                        <object data="/assets/pdf/ThibaultDeclarations/DavidCrespiDeclaration.pdf" type="application/pdf" class="pdf"></object>
+            medication
+            their doctors are telling them is safe. Let David Crespi go home to his family. this man has suffered
+            enough.
+        </p>
+        <p> OK. So we’ve got help started. Can you tell me what happened? How did you kill them?
+
+            Crespi: With a knife
+
+            Operator: And you’re sure they’re deceased?
+
+            Crespi: Yeah. Yeah, they’re dead.
+
+            Operator: OK.
+
+            Operator: Sir, did you have a fight with your wife? Is this what happened?
+
+            Crespi: No
+
+            Operator: No? You just couldn’t handle it anymore?
+
+            Crespi: Yeah.
+
+            Operator: OK. You said you were not on any kind of medication right?
+
+            Crespi: I’m on a….
+
+            Operator: What kind of meds are you on sir?
+
+            Crespi: I’m on (inaudible)
+
+            Operator: I’m sorry?
+                        <object data="/assets/pdf/ThibaultDeclarations/ChristopherPittmanDeclaration.pdf" type="application/pdf" class="pdf"></object>
+
+            Crespi: I’m on antidepressants.
+
+            Operator: You’re on antidepressants?
+
+            Crespi: Yeah.
+
+            Operator: What kind?
+
+            Crespi: Inaudible
+
+            Operator: Huh?
+
+            Crespi: Prozac and other kinds.
+
+            Operator: Have you taken you medicine today?
+
+            Crespi: I don’t remember.
+
+            Operator: You don’t remember? Have you taken anything today?
+
+            Crespi: Ah, I don’t remember.
+
+            Operator: Keep talking to me because you sound a little bit tired and stuff and we’re wondering if you maybe
+            took too much medication.
+
+                        <object data="/assets/pdf/ThibaultDeclarations/DavidCarmichaelDeclaration.pdf" type="application/pdf" class="pdf"></object>
+            Crespi: No, this is real.
+
+            Operator: I know it’s real. Sir, we’re all, everybody’s on the way. OK? Alright?
+
+            Operator: Sir, are you home by yourself, I mean, with you and the girls?
+
+            Crespi: Yeah.
+
+            Operator: OK.
+
+            Crespi: My two daughters.
+
+            Operator: Are you sure that they’re dead?
+
+            Crespi: They’re dead.</p>
+        <pdf-viewer class='pdf' 
+            src="/assets/pdf/ThibaultDeclarations/DavidCrespiDeclaration.pdf" class='pdf'></pdf-viewer>
+
+    </div>
+
+    <div class="victim" *ngIf="patient === 'pittman'" id="pittman">
+        <h1>Christopher Pittman</h1>
+        <div class="images">
+            <img src="/assets/images/Other_Patients/Christopher_Pittman_001.jfif" />
+            <img src="/assets/images/Other_Patients/Christopher_Pittman_002.jfif" />
+        </div>
+        <p>In 2001 at the age of 12 years old, Christopher Pittman was abruptly switched from the SSRI antidepressant
+            Paxil
+            to
+            Zoloft. He then experienced Hallucinations, bizarre behavior and shot both of his grandparents in the
+            head
+            with
+            a
+            twelve gauge shotgun prior to setting their house on fire. In a blaze of irony, the community of adults,
+            prosecutors
+            and judges who allowed a doctor to give a twelve year old an amphetimine like hallucinagenic then sentenced
+            the
+            twelve year old boy to prison for the remainder of his life. Christopher helped to prevent these types of
+            incidents
+            occurring to others by submitting the following affidavit to a lawsuit against the FDA to force the release
+            of
+            detailed narrative adverse drug reaction reports from the U.S. Food and Drug Administration. Let Christopher
+            Pittman
+            out, and incarcerate the CEO's of Pharmaceutical companies who know that these types of incidents will
+            occur,
+            and
+            manufacture and distribute these substances anyway.</p>
+        <pdf-viewer class='pdf' 
+            src="/assets/pdf/ThibaultDeclarations/ChristopherPittmanDeclaration.pdf" class='pdf'></pdf-viewer>
+
+    </div>
+
+    <div class="victim" *ngIf="patient === 'carmichael'" id="carmichael">
+        <h1>David Carmichael</h1>
+        <div class="images">
+            <img src="/assets/images/Other_Patients/David_Carmichael_001.jpg">
+            <img src="/assets/images/Other_Patients/David_Carmichael_002.jpg">
+            <img src="/assets/images/Other_Patients/David_Carmichael_003.jpg">
+        </div>
+        <p> David Carmichael is one of the nicest, most emotionally supportive empathetic men on earth. And what
+            Glaxo-Smith
+            Kline did to his family is sadistic, vile and inhumane. After being prescribed Paxil an SSRI
+            antidepressant,
+            David
+            suffered a psychotic episode and strangled his own ten year old son Ian. He was found not criminally
+            responsible
+            by
+            the crown in Canada and was hospitalized for years afterwards. The medication Mr. Carmichael
+            was prescribed legally is more likely to medically induce a homicide than any other legally prescribed
+            medication.
+            GSK knew that incidents like
+            this would happen and they manufactured and distributed these substances anyway. Don't let this happen to
+            anybody
+            else. Hold GSK accountable and put their CEO's in prison. </p>
+        <pdf-viewer class='pdf' 
+            src="/assets/pdf/ThibaultDeclarations/DavidCarmichaelDeclaration.pdf" class="pdf"></pdf-viewer>
+
+
+        <iframe class="center" width="service.width" height="service.height"
+            src="https://www.youtube.com/embed/2w6hy6cTGrk" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <a class="center"
+            href="https://www.madinamerica.com/2018/03/calm-organized-homicidal-behaviour-connection-school-shooters/">Calm,
+            Organized, Homicidal Behaviour – My Connection to School Shooters</a>
+    </div>
+
+    <div class="victim" *ngIf="patient === 'danysh'" id="danysh">
+        <h1>Kurt Danysh</h1>
+        <div class="images">
+            <img src="/assets/images/Other_Patients/kurt_danish_001.webp" />
+            <img src="/assets/images/Other_Patients/kurt_danysh_003.jfif" />
+            <img src="/assets/images/Other_Patients/kurt_danysh_002.jpg" />
+        </div>
+        <pdf-viewer class='pdf'  src="/assets/pdf/ThibaultDeclarations/KurtDanyshDeclaration.pdf"
+            class="pdf"></pdf-viewer>
+
+    </div>
+
+    <div class="victim" *ngIf="patient === 'demeniuk'" id="demeniuk">
+        <h1>Leslie Demeniuk</h1>
+        <div class="images">
+            <img src="/assets/images/Other_Patients/leslie_demeniuk_001.jpg" />
+            <img src="/assets/images/Other_Patients/leslie_demeniuk_002.jpg" />
+        </div>
+        <pdf-viewer class='pdf' 
+            src="/assets/pdf/ThibaultDeclarations/LeslieDemenuikDeclaration.pdf" class="pdf"></pdf-viewer>
+    </div>
+
+    <div class="victim" *ngIf="patient === 'richardson'" id="richardson">
+        <h1 class="center">Kevin Richardson</h1>
+        <div>
+            <img class="center" src="/assets/images/kevin_richardson.jpg" />
+            <p class="center">After being treated with Prozac without beign warned of violence related side effects,
+                Kevin Richardson murdered a
+                female acquaintance, cut off his own hand then stabbed himself through the neck and the
+                eye until he died while singing opera music, . according to his mother, Kevin did not
+                know how to sing opera music.</p>
+            <p class="center">Nobody stabs themself through the neck abdomen, and cuts off their own body parts of
+                their own free will,
+                clearly kevin lacked the intent to commit this crime that resulted in his own death</p>
+            <hr />
+        </div>
+
+    </div>
+
+    <div class="victim" *ngIf="patient === 'ramos'" id="ramos">
+        <h1 class="center">Jonathan Ramos</h1>
+        <div>
+            <img class="center " src="/assets/images/Other_Patients/jonathan_ramos.jpg" />
+            <p class="richardson">Shortly after being prescribed the SSRI antidepressant Effexor, Jonathan Ramos became
+                delusional, believed the moon was telling him to kill himself, and stabbed his girlfriend with a
+                pocketknife. He was sentenced to life in prison. DNA analysis subsequently proved that these incidents
+                were induced by the SSRI antidepressant Effexor. Despite the fact that Jonathan Ramos was the victim of
+                pharmaceutical company greed, he has been released but was forced to plead to a lesser charge and will
+                live with a criminal record for the rest of his life. Jonathan Ramos was not guilty.</p>
+            <pdf-viewer class='pdf'  class="center" src="/assets/pdf/PetitionRamos2019.pdf"
+                class="pdf"></pdf-viewer>
+        </div>
+
+    </div>
+
+    <div class="victim" *ngIf="patient === 'lanza'" id="lanza">
+        <h1 class="center">Adam Lanza</h1>
+        <div>
+            <img class="center " src="/assets/images/Other_Patients/adam_lanza.jpg" />
+            <p class="lanza">Adam Lanza is dead, and reviled as one of the worst mass shooters in American History.
+                Nobody anywhere defends what he did or the families he destroyed.
+                Prior to the shootings in Newtown Connecticut he was treated with both Celexa and Lexapro. The
+                Connecticut Medical examiner sealed the medical records in this incident because it might "scare other
+                patients off from taking their medication". There has been a tremendous amount of debate and litigation
+                surrounding whether or not Adam was on Lexapro on the dates of the incidents. That debate is irrelevant.
+                SSRI antidepressants are designed to dramatically alter the <a
+                    href="https://www.mpg.de/8426203/escitalopram-brain#:~:text=Escitalopram%20influences%20which%20networks%20of,to%20three%20weeks%20to%20unfold.">architecture
+                    and functioning of the human
+                    brain.</a> Some of the damage is clearly permanent and adverse drug events can occur even after the
+                patient
+                has stopped taking the drug or in the withdrawal phase which is just as dangerous as when they are on
+                the
+                medication. Adam's Psychiatrist, Dr. Paul J. Fox surrendered his medical license and fled the country to
+                New Zealand after being accused of being a child molester. Andrew Solomon, the son of the CEO of Forest
+                Laboratories showed up at Adam's father's house shortly after the shootings, and published an article in
+                the New Yorker stating that Adam was not on Lexapro on the dates of the shootings. This is contradicted
+                by Police reports that say he was. Any time that you prescribe a class of medication to a patient, and
+                you end up with 20 dead five year olds, 6 dead adults and a national debate about gun control, don't
+                give any more patients that class of medication. Mass murder doesn't make anybody happy other than
+                pharmaceutical company executives. Blaming this incident on Adam or even the guns alone does not solve
+                the problem or prevent further incidents. There is a causal relationship between treatment with SSRI
+                medication and extreme acts of violence.</p>
+        </div>
+
+    </div>
+
+    <div class="victim" *ngIf="patient === 'lindsay'" id="lindsay">
+        <h1 class="center">Lindsay Clancy</h1>
+        <div>
+            <img class="center " src="/assets/images/Other_Patients/Lindsay_Clancy.jpg" />
+            <p class="lindsay">Lindsay Clancy strangled all three of her own children after being prescribed Prozac with
+                multiple concomitant
+                medications. This incident is very similar to when Andrea Yates strangled all of
+                her children after being prescribed over the maximum dosage of Effexor an SSRI antidepressant. All three
+                of Lindsay Clancy and husband Patrick's children are dead. She then jumped out the window of their house
+                and will be paralyzed from the waist down for life. A nine trillion dollar pharmaceutical industry does
+                not want the public to know that
+                Homicidal Ideation and Suicidal Ideation are both known side effects one of their most lucrative
+                products, SSRI antidepressants. While the trial will
+                blame her actions on postpartum depression, or postpartum psychosis it is abundantly clear that Elli
+                Lilly the manufacturer or prozac was aware that
+                incidents of this type would occur prior to buying approval for Prozac and releasing it on the American
+                Public anyway. They concealed the fact that Prozac caused both Suicide and Homicide in the clinical
+                trials. They also submitted falsified data and drug trials in order to gain approval. The court system
+                will continue to hide the
+                root cause of these incidents, and the media who's largest source of revenue is pharmaceutical
+                advertising will not inform the public of the dangers of this inneffective and unbelievably dangerous
+                form of medical treatment. One thing you can be absolutely sure of is that the Judiciary won't do
+                anything to protect the public, protect further incidents or hold Elli Lilly or any other pharmaceutical
+                company accountable. Currently up to 65% of funding for the FDA comes from "User Fees" charged to the
+                Pharmaceutical Companies. This makes the Pharmaceutical Companies the largest source of revenue for the
+                U.S. Food and Drug Administration. With the Pharmaceutical companies holding a controlling financial
+                interest in the FDA, which is supposed to oversee the safety of their products multiple dangerous
+                classes of medication have been approved and released on the public including Fentanyl and opiods,
+                Murder inducing Antidepressants, and a vaccine that may or may not protect against a man made virus but
+                definitely causes myocarditis and massive internal organ failure. Pharmaceutical corporations now
+                contribute more money to congress than all department of defense contractors combined, and this blatant
+                financial conflict of interest will continue to cause violent incidents across the U.S. Lindsay Clancy
+                was not guilty and Elli Lilly should be held accountable for the violent deaths of these children. This
+                incident did not occur until over a year after the Federal Court system and the California State Court
+                system received Mr. Bathen's Habeas petition containing FDA statistics and screenshots of the FAERs
+                dashboard showing that SSRI antidepressants cause both homicide and suicide. Clearly this incident could
+                have been prevented if the Federal courts were interested in protecting society. Everyone in the court
+                system including the judges, please stop allowing the violent rage filled murder of small children while
+                you are making up random bullshit to justify upholding false convictions.</p>
+        </div>
+    </div>
+
+    <div class="victim" *ngIf="patient === 'yates'" id="yates">
+        <h1 class="center">Andrea Yates</h1>
+        <div>
+            <img class="center " src="/assets/images/Other_Patients/AndreaYates-Collage.jpg" />
+            <p class="yates">Andrea Yates drowned all five of her own children after being prescribed over the maximum
+                dosage of Effexor. This incident is very similar to when Lindsay Clancy strangled all of
+                her children after being prescribed Prozac and concommittant medications. All of Andrea Yates children
+                are dead. Although the defense focused on pospartum depression as the cause of the incidents, the fact
+                that Effexor now carries a mandatory warning about homicidal ideation should not be ignored. It was
+                added as a result of these incidents. Don't let the pharmaceutical industry get away with continuing to
+                cause more of these incidents. </p>
+        </div>
+    </div>
+
+    <div class="victim" *ngIf="patient === 'jacobs'" id="jacobs">
+        <h1 class="center">Carolyn Jacobs</h1>
+        <div>
+            <p class="jacobs">Although Dr. Jacobs attibutes the symptoms she quotes in her victim impact statement to
+                trauma caused by those terrible voicemails, the symptoms are an exact match to the most serious side
+                effects of Prozac. She is currently experiencing <a
+                    routerLink="/medically_induced_tremor">medically induced tremor</a>, paranoia, and extreme
+                hostility and aggression towards others including her patients and former patients. The San Diego
+                District Attorney's office won't do anything to help her, or protect society. She is still practicing
+                today and telling patients "It's my moral and ethical obligation to make sure you are taking this
+                medication!" without telling them that they may commit a homicide and go to prison for life as a result.
+                She is still telling them "You will need to take this medication on and off for the remainder of your
+                life to manage the symptoms of depression" without telling them that the most serious adverse drug
+                events occur the second or third time the medication is introduced, and they may kill someone, kill
+                themselves, or end up with severe neurological damage in solitary confinement in prison. </p>
+        </div>
+    </div>
+</div>

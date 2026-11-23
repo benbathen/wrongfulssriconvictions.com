@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  openFdaApiKey: 'qtUlQb1BFGc4GepRZZLlyd8re29SFjp4QaJr4oix' // put key here only for development/testing
 };
 
 /*

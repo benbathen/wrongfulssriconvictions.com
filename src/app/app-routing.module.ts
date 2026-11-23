@@ -25,10 +25,25 @@ import { MedicallyInducedTremorComponent } from './medically-induced-tremor/medi
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { RedactComponent } from './redact/redact.component';
+import { LawComponent } from './law/law.component';
+import { ImmediateComponent } from './immediate/immediate.component';
+import { IacComponent } from './iac/iac.component';
+//import { LinksComponent } from './links/links.component';
+import { ForrestComponent } from './forrest/forrest.component';
+import { RobBontaComponent } from './rob-bonta/rob-bonta.component';
+import { InterviewComponent } from './interview/interview.component';
+import { ResultsComponent } from './results/results.component';
+import { StoriesComponent } from './stories/stories.component';
+import { TardiveDyskenisiaComponent } from './tardive-dyskenisia/tardive-dyskenisia.component';
+import { WebPollComponent } from './web-poll/web-poll.component';
+import { CommentsComponent } from './comments/comments.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 
 const routes: Routes = [
+  {path: 'wrongful_convictions' , component: IntroductionComponent},
   {path: 'introduction' , component: IntroductionComponent},
   {path: 'state-habeas-petition', component: StateHabeasPetitionComponent},
   {path: 'dna_evidence', component: DnaEvidenceComponent},
@@ -38,6 +53,7 @@ const routes: Routes = [
   {path: 'fda-hearing-transcript', component: FdaHearingTranscriptsComponent},
   {path: 'fda-detailed-reports', component: FdaDetailedReportsComponent},
   {path: 'akathisia', component: AkathisiaComponent},
+  {path: 'tardive-dyskenisia', component: TardiveDyskenisiaComponent},
   {path: 'fda-statistics', component: FdaStatisticsComponent},
   {path: 'other-patients', component: OtherPatientsComponent},
   {path: 'scientific-research', component: ScientificResearchComponent},
@@ -47,13 +63,25 @@ const routes: Routes = [
   {path: 'medicating_normal' , component: MedicatingNormalComponent},
   {path: 'marci_webber', component: MarciWebberComponent},
   {path: 'prescription_for_murder', component: PrescriptionForMurderComponent},
+  {path: 'law', component: LawComponent},
+ // {path: 'links', component: LinksComponent},
   {path: 'gofundme', component: GofundmeComponent},
   {path: 'contact', component: ContactComponent},
-  { path: '**', redirectTo: 'introduction' }
+  {path: 'redact', component: RedactComponent},
+  {path: 'immediate', component: ImmediateComponent},
+  {path: 'forrest', component: ForrestComponent},
+  {path: 'iac', component: IacComponent},
+  {path: 'rob-bonta', component: RobBontaComponent},
+  {path: 'interview', component: InterviewComponent},
+  {path: 'results', component: ResultsComponent},
+  {path: 'stories', component: StoriesComponent},
+  {path: 'web-poll', component: WebPollComponent},
+  {path: 'comments', component: CommentsComponent},
+  {path: '**', redirectTo: 'introduction' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), HttpClientModule, BrowserModule, CommonModule], 
+  imports: [RouterModule.forRoot(routes), HttpClientModule, BrowserModule, CommonModule, PdfViewerModule], 
   exports: [RouterModule],
   providers: [
     {
@@ -66,3 +94,5 @@ const routes: Routes = [
 ]
 })
 export class AppRoutingModule { }
+
+export { RouterModule };
